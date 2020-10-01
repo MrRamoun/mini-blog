@@ -1,7 +1,8 @@
 h2, 
-.article-2 p:not(:last-child) {
+.article-2 p {
     margin-bottom: 2.4rem;
 }
+
 
 .article-2 h1   { font: 700 2.0rem/1.2 'Roboto'; color: hsl(000, 0%, 33%);}
 .article-2 h2   { font: 400 1.5rem/1.2 'Roboto'; color: hsl(000, 0%, 33%);}

@@ -32,11 +32,34 @@ article {
     border-radius: 20px;
 }
 
+figure * {
+    display: block; /* remvoing the space beneth the imgage */
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 0.5rem;
+}
+
+.share {
+	display: flex;
+	justify-content: center; 
+}
+
+.share img {
+	padding: 0.75rem;
+	width:   1.50rem;
+	height:  1.50rem;
+}
+
 @media all and (max-width: 900px) {
     .articles {
         grid-template-columns:                            
             [article-start]                  
-            minmax(300px, 800px)                     
+            minmax(280px, 800px)                     
             [article-end];        
-    }    
+    }  
+ 
 }
