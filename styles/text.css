@@ -4,14 +4,14 @@ h2,
 }
 
 
-.article-2 h1   { font: 700 2.0rem/1.2 'Roboto'; color: hsl(000, 0%, 33%);}
-.article-2 h2   { font: 400 1.5rem/1.2 'Roboto'; color: hsl(000, 0%, 33%);}
-.article-2 time { font: 700 1.0rem/1.2 'Roboto'; color: hsl(120, 100%, 75%);} /*250 100% 84%*/
-.article-2 h3   { font: 700 1.0rem/1.2 'Roboto'; color: hsl(120, 100%, 67%);} /*250 100% 75%*/
-.article-2 p    { font: 400 1.0rem/1.5 'Roboto'; color: hsl(000, 0%, 33%);}
+.article-2 h1      { font: 700 2.0rem/1.2 'Roboto'; color: hsl(000, 000%, 33%);}
+.article-2 h2      { font: 400 1.5rem/1.2 'Roboto'; color: hsl(000, 000%, 33%);}
+.article-2 time    { font: 700 1.0rem/1.2 'Roboto'; color: hsl(120, 100%, 75%);} /*250 100% 84%*/
+.article-2 h3      { font: 700 1.0rem/1.2 'Roboto'; color: hsl(120, 100%, 67%);} /*250 100% 75%*/
+.article-2 p       { font: 400 1.0rem/1.5 'Roboto'; color: hsl(000, 000%, 33%);}
 
-.article-2 a    { box-shadow: inset 0 -0.25em hsl(55, 100%, 75%); }
-
+.article-2 a       { box-shadow: inset 0 -0.25em hsl(55, 100%, 75%); }
+.article-2 a:hover { box-shadow: inset 0 -0.50em hsl(55, 100%, 75%); }
 
 @media all and (max-width: 800px) { :root {font-size: 18px;} }
 @media all and (max-width: 600px) { :root {font-size: 14px;} }

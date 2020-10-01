@@ -1,21 +1,30 @@
+* {
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+a {
+    cursor: pointer;
+}
+
 body {
-    margin: 50px 5%;
+    margin: 0 0 50px 0;
 }
 
 .articles {       
     display: grid;
 
     grid-template-columns:                
-        [margin-left]
+        [start margin-left]
         1fr 
         [article-start]                  
         70%         
         [article-end]
         1fr
-        [margin-right];
+        [end margin-right];
 
     grid-auto-rows: initial;
-    gap: 50px;
+    gap: 5vw 0;
+    margin: 0 20px;
 }
 
 
@@ -49,17 +58,13 @@ figcaption {
 }
 
 .share i {
-	padding: 0.75rem;
-	/* width:   1.50rem;
-	height:  1.50rem; */
+    padding: 0.75rem;	    
+    color: hsl(120, 100%, 70%);
 }
 
 @media all and (max-width: 900px) {
     .articles {
-        grid-template-columns:                            
-            [article-start]                  
-            minmax(280px, 800px)                     
-            [article-end];        
+        grid-template-columns:  [start] 1fr [article-start] minmax(280px, 800px) [article-end] 1fr [end];                
     }  
  
 }
