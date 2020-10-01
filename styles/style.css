@@ -1,0 +1,42 @@
+body {
+    margin: 50px 5%;
+}
+
+.articles {       
+    display: grid;
+
+    grid-template-columns:                
+        [margin-left]
+        1fr 
+        [article-start]                  
+        70%         
+        [article-end]
+        1fr
+        [margin-right];
+
+    grid-auto-rows: initial;
+    gap: 50px;
+}
+
+
+ 
+.debug-full-center {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    border: 10px solid hsl(120, 100%, 70%);
+    border-radius: 20px;
+}
+
+@media all and (max-width: 900px) {
+    .articles {
+        grid-template-columns:                            
+            [article-start]                  
+            minmax(300px, 800px)                     
+            [article-end];        
+    }    
+}

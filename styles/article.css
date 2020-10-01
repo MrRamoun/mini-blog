@@ -1,0 +1,98 @@
+article {
+    height: initial;
+
+    display: grid;
+
+    grid-template-columns:  
+        [padding-left-start] 
+        5% 
+        [padding-left-end bigsize-start]              
+        5%
+        [medsize-start]
+        5%
+        [smallsize-start]
+        5%
+        [extrasmallsize-start]
+        5%
+        [tinysize-start]
+        50%
+        [tinysize-end]
+        5%
+        [extrasmallsize-end]
+        5%
+        [smallsize-end]
+        5%
+        [medsize-end]
+        5%
+        [padding-right-start bigsize-end]
+        5%
+        [padding-right-end];                           
+
+    padding: 30px 0;
+}
+
+article {
+    grid-column: article;
+}
+
+article * {
+    grid-column: padding-left-end / padding-right-start;
+}
+
+
+article .size-1,
+article .size-2,
+article .size-3,
+article .size-4 
+{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;    
+}
+
+
+.size-1 {
+    grid-column: extrasmallsize;    
+}
+.size-2 {
+    grid-column: smallsize;
+}
+.size-3 {
+    grid-column: medsize;
+}
+.size-4 {
+    grid-column: bigsize;
+}
+
+@media all and (max-width: 700px) {
+    article {
+        grid-template-columns: 
+            [padding-left-start] 
+            5% 
+            [padding-left-end bigsize-start]                  
+            5% 
+            [medsize-start]
+            5%
+            [smallsize-start]
+            70%
+            [smallsize-end]
+            5%
+            [medsize-end]
+            5%
+            [padding-right-start bigsize-end]
+            5%
+            [padding-right-end];                                
+    }
+    .size-4 {
+        grid-column: padding-left-start / padding-right-end;
+    }
+    .size-3 {
+        grid-column: bigsize;
+    }
+    .size-2 {
+        grid-column: medsize;
+    }
+    .size-1 {
+        grid-column: smallsize;
+    }
+}
