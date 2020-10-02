@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/-debug.css">
-    <link rel="stylesheet" href="styles/text.css">
-    <link rel="stylesheet" href="styles/grid.css">
-    <link rel="stylesheet" href="styles/article.css">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/-debug.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/article.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
     <title>Document</title>
 </head>
-<body>
+<body onload="getTime()">
     <nav>
         <span class="logo"><a href="index.html"><em>RAMOUN'S LOG</em></a></span>
         <ul id="the-ul">
@@ -31,64 +31,32 @@
         <button class="login" onclick="goToLogin()">LOGIN</button>
     </nav>
 
-    <div class="articles">
-        <article class="article-1">
-            <p>hello our guys</p>
-            <img class="size-1" src="https://placeimg.com/300/200" alt="">
-            <p>someboyd that i used to know</p>
-        </article>
-        <article id="the-cosmos" class="article-2">
-            <h1><a href="#the-cosmos">The <em>Cosmos</em> is all there is</a></h1>
-            <h2>Or ever was, or ever will be</h2>
+    <div class="articles">       
+        <article id="login-container" class="article-2">
+            <h1 class="debug-center"><a href="#login-container">The <em>Admin</em> Login Credentials</a></h1>
+            <h2 class="debug-center">Only ramoun is allowed to enter this page</h2>
+            <time class="debug-center" datetime="03-09-2014">MAR. 9, 2014</time>
     
-            <time datetime="03-09-2014">MAR. 9, 2014</time>
             <p>
-                <em>A generation ago</em>, the astronomer <a href="https://en.wikipedia.org/wiki/carl_sagan">Carl Sagan</a> stood here and launched hundreds of millions of us on a great adventure the exploration of the universe revealed by science.
-                It's time to get going again.
-                We're about to begin a journey that will take us from the infinitesimal to the infinite, from the dawn of time to the distant future.
-                We'll explore galaxies and suns and worlds, surf the gravity waves of space-time, encounter beings that live in fire and ice, explore the planets of stars that never die, discover atoms as massive as suns and universes smaller than atoms.
             </p>
 
-            <figure>
-                <img class="size-1" src="https://insidetheperimeter.ca/wp-content/uploads/2014/11/150611A-Sagan.jpg">
-            </figure>
-            <figcaption>
-                <p><em>Carl Sagan</em></p>
-            </figcaption>
-    
-            <h3>COSMOS IS ALSO A STORY ABOUT US</h3>
-            <p>
-                It's the saga of how wandering bands of hunters and gatherers found their way to the stars, one adventure with many heroes.
-                To make this journey, we'll need imagination.
-                But imagination alone is not enough because the reality of nature is far more wondrous than anything we can imagine.
-                This adventure is made possible by generations of searchers strictly adhering to a simple set of rules test ideas by experiment and observation, build on those ideas that pass the test, reject the ones that fail, follow the evidence wherever it leads and question everything.
-                <strong>Accept these terms, and the cosmos is yours.</strong>
-            </p>
-
+            <form action="">
+                <input id="username" type="text" placeholder="Username">
+                <input id="password" type="password" placeholder="Password">
+                <button onclick="logMeIn()">Log In</button>
+            </form>
+            
             <div class="share">
-				<a href="https://facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+				<a href="https://facebook.com/ramoun.x6"><i class="fa fa-facebook-square" aria-hidden="true"></i>
                 </a>
-				<a href="https://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+				<a href="https://twitter.com/ramoun16"><i class="fa fa-twitter-square" aria-hidden="true"></i>
                 </a>
             </div>
             
         </article>
-
-        <article class="article-3"><img class="size-2" src="https://placeimg.com/600/400" alt=""></article>
-
-        <article class="article-4"><img class="size-3" src="https://placeimg.com/900/600" alt=""></article>
-
-        <article class="article-5"><img class="size-4" src="https://placeimg.com/1200/900" alt=""></article>
-
-        <article class="article-6">        
-            <p class="debug-full-center">thsis is the article</p>
-        </article>
-
-        <article class="article-7">        
-            <p class="debug-full-center">thsis is another article</p>
-        </article>
+       
     </div>
 
-    <script src="scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
