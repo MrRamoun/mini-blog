@@ -21,22 +21,13 @@ nav .logo {
     /* background: hsla(55, 100%, 75%, 70%); */
 }
 
-nav .logo::before {
-    content: '';
-    display: block;
-
-    height: 10px;
-    width: 100%;
-
-    background: red;
-}
-
-nav .logo:hover {    
+.logo:hover {    
     box-shadow: inset 0 48px hsla(000, 000%, 33%, 18%);
 }
 
 nav ul {
     display: flex;
+    flex-direction: row;
     margin-left: auto;    
 }
 
@@ -49,3 +40,54 @@ nav ul li {
 
 nav ul li a:hover  { box-shadow: inset 0 -0.50em hsl(55, 100%, 75%); }
 nav ul li a:focus  { box-shadow: inset 0 -1.00em hsl(55, 100%, 75%); }
+
+.icon {
+    margin-left: auto;
+    display: none;
+}
+
+@media all and (max-width: 650px) {
+    .icon {
+        display: initial;
+    }
+
+    nav::before {
+        display: none;
+
+        content: '';
+        position: fixed;
+
+        right: 0;
+        top: 50px;
+
+
+        height: 100%;
+        width : 40vw;
+
+        z-index: 1;
+        background: hsl(000, 000%, 33%);  
+        
+        opacity: 0.8;
+    }
+
+    nav ul {
+        display: none;
+
+        flex-direction: column;
+
+        position: fixed;
+
+        right: 16vw;
+        top: 70px;        
+    }
+
+    nav ul li {
+        background: hsl(120, 100%, 70%);
+        width: 100%;
+        padding: 10px 5vw;
+        margin-bottom: 10px;
+        color: white;
+    }
+   
+}
+

@@ -68,3 +68,9 @@ figcaption {
     }  
  
 }
+
+@media all and (max-width: 316px) {   
+    .articles {
+        margin: 0 0;
+    }
+}
