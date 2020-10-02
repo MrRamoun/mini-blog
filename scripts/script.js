@@ -43,20 +43,15 @@ function getTime() {
     document.getElementsByTagName("time")[0].setAttribute("datetime", datetime);
 }
 
-let counter = 3;
-function logMeIn() {
-    if (counter > 0) {
-        let username = document.getElementById("username").innerHTML;
-        let password = document.getElementById("password").innerHTML;
+// document.getElementById("input").addEventListener("change", logMeIn);
+function logMeIn() {    
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
     
         if (username.toLowerCase() === "ramoun" && password.toLowerCase() === "ramoun16") {
-            window.location.href = "../pages/dashboard.html";
-        } else {
-            counter--;
+            window.location.href = "../pages/dashboard.html";    
+            alert(username + " " + password);}
+        else {
             alert("Invalid username or password");
-            alert(`after ${counter} invalid times an email will be sent to ramoun`);
-        }      
-    } else {
-        alert("an email was sent to ramoun");
-    }
+        }
 }
