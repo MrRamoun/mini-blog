@@ -27,3 +27,8 @@ function openMenu () {
     }
     
 }
+
+function goToLogin() {
+    // simulate  a mouse click
+    window.location.href = "pages/login.html";
+}
