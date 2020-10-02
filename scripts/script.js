@@ -43,7 +43,7 @@ function getTime() {
     document.getElementsByTagName("time")[0].setAttribute("datetime", datetime);
 }
 
-// document.getElementById("input").addEventListener("change", logMeIn);
+document.getElementById("input").addEventListener("change", logMeIn);
 function logMeIn() {    
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;

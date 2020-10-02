@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../styles/dashboard.css">
     <script src="../codepress.com/codepress/codepress.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
-<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
     <title>Document</title>
 </head>
@@ -46,7 +46,7 @@
                     [krajee](https://plugins.krajee.com/markdown-editor)
                 </textarea>
                 
-                <button>PUSH</button>
+                <button onclick="push()">PUSH</button>
             </form>
 
 
@@ -101,7 +101,9 @@
         </article>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../scripts/dashboard.js"></script>
+    <script src="../scripts/script.js"></script>
     <script>
         var simplemde = new SimpleMDE({ element: document.getElementById("code-editor"),
         autofocus: true,
