@@ -13,12 +13,13 @@ nav {
 
 }
 
-nav .logo {
+nav .logo {    
     box-shadow: inset 0 5px hsla(000, 000%, 33%, 18%);
     padding: 15px 10px; 
 
     background: hsl(55, 100%, 75%);
     /* background: hsla(55, 100%, 75%, 70%); */
+    
 }
 
 .logo:hover {    

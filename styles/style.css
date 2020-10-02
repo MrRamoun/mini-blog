@@ -72,5 +72,14 @@ figcaption {
 @media all and (max-width: 316px) {   
     .articles {
         margin: 0 0;
+        gap: 0;
+    }
+    article {
+        border-radius: 0px;
+        border-bottom: 0;
+        border-top: 10px;
+    }
+    nav {
+        margin-bottom: 0px;
     }
 }

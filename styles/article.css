@@ -29,6 +29,8 @@ article {
         [padding-right-end];                           
 
     padding: 30px 0;
+
+    background: linear-gradient(hsl(120, 100%, 70%), white 6.55rem);
 }
 
 article {
