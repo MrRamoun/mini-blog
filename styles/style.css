@@ -78,6 +78,7 @@ figcaption {
         border-radius: 0px;
         border-bottom: 0;
         border-top: 10px;
+        background: linear-gradient(hsl(120, 100%, 70%), white 6.55rem);
     }
     nav {
         margin-bottom: 0px;
