@@ -70,6 +70,10 @@ figcaption {
 }
 
 @media all and (max-width: 316px) {   
+    body {
+        margin: 0;        
+        border-bottom: 10px solid hsl(120, 100%, 70%);
+    }
     .articles {
         margin: 0 0;
         gap: 0;
